@@ -1,3 +1,6 @@
+# Sniperkit-Bot
+# - Status: analyzed
+
 packages:
   importalias:
     main: github.com/palantir/go-importalias

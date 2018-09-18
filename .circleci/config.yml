@@ -1,5 +1,8 @@
+# Sniperkit-Bot
+# - Status: analyzed
+
 working_dir: &working_dir
-  working_directory: /go/src/github.com/palantir/godel-okgo-asset-importalias
+  working_directory: /go/src/github.com/sniperkit/snk.fork.palantir-godel-okgo-asset-importalias
 
 darwin-linux-no-cgo: &darwin-linux-no-cgo
   <<: *working_dir

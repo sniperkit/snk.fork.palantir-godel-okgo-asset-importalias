@@ -1,3 +1,8 @@
+/*
+Sniperkit-Bot
+- Status: analyzed
+*/
+
 // Copyright 2016 Palantir Technologies, Inc.
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
@@ -17,19 +22,19 @@ package cmd
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/palantir/godel-okgo-asset-importalias/generated_src/internal/github.com/palantir/go-importalias/importalias"
+	"github.com/sniperkit/snk.fork.palantir-godel-okgo-asset-importalias/generated_src/internal/github.com/palantir/go-importalias/importalias"
 )
 
 var (
-	RootCmd	= &cobra.Command{
-		Use:	"importalias [flags] [packages]",
-		Short:	"verifies that import aliases are consistent across files and packages",
+	RootCmd = &cobra.Command{
+		Use:   "importalias [flags] [packages]",
+		Short: "verifies that import aliases are consistent across files and packages",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			return importalias.Run(args, verboseFlagVal, cmd.OutOrStdout())
 		},
 	}
 
-	verboseFlagVal	bool
+	verboseFlagVal bool
 )
 
 func init() {
